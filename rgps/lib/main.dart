@@ -18,8 +18,13 @@ class MiAplicacion extends StatelessWidget{
     return MaterialApp(
       //Quitamos la etiqueta de debug de la aplicación.
       debugShowCheckedModeBanner: false,
+      //Elegimos el tema.
+      theme: ThemeData(
+        useMaterial3: true,
+        colorSchemeSeed: Color.fromRGBO(0, 204, 0, 100)
+      ),
       //Llamamos a la pantalla y la colocamos aquí.
-      home: ScrContador(),
+      home: const ScrContador(),
     );
   }
 
